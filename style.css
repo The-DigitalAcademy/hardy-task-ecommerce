@@ -1,0 +1,73 @@
+/* DEFAULT CSS variables *********/
+:root {
+  --bodyBg: #eee;
+  --white: #fff;
+  --bodyColor: rgb(63, 63, 63);
+  --primary: rgb(159, 13, 139);
+  --transition: ease-in-out 300ms;
+}
+
+/* RESET general style ************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: none;
+  list-style: none;
+}
+
+body {
+  background-color: var(--bodyBg);
+  color: var(--bodyColor);
+}
+
+/* CONTAINER **********************/
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* LOGO section *******************/
+.logo {
+  text-align: center;
+  margin: 2rem;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.logo span {
+  color: var(--primary);
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+/* NAVIGATION ********************/
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+  background: var(--white);
+  padding: 0.4rem 2rem;
+  border-radius: 0.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--bodyColor);
+  border: solid 2px var(--bodyBg);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: var(--transition);
+}
+
+nav a:hover {
+  border: solid 2px var(--primary);
+}
+
+a, .active {
+  color: var(--primary);
+}
